@@ -2,10 +2,6 @@ package org.tragent.daneil.messenger.model;
 
 import java.util.Date;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-
-@XmlRootElement
 public class Profile {
 	private long id;
 	private String profileName;
