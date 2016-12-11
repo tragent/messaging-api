@@ -7,9 +7,11 @@ import javax.ws.rs.core.MediaType;
 
 import org.tragent.daneil.messenger.service.MessageService;
 import org.tragent.daneil.messenger.model.Messages;
+import org.tragent.daneil.messenger.resources.beans.MessageFilterBean;
 
 import java.util.List;
 
+import javax.ws.rs.BeanParam;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -23,7 +25,13 @@ public class MessageResource {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Messages> getMessages(){
+	public List<Messages> getMessages(@BeanParam MessageFilterBean filterBean){
+		if(filterBean.getYear() > 0){
+			return messageService.getAllMessagesForYear(filterBean.getYear());
+		}
+		if (filterBean.getStart() >= 0 && filterBean.getSize() >= 0){
+			return messageService.getAllMessagesPaginated(filterBean.getStart(), filterBean.getSize());
+		}
 		return messageService.getAllMessages();
 	}
 	
@@ -55,5 +63,10 @@ public class MessageResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public void deleteMessage(@PathParam("messageId") long id){
 		messageService.removeMessage(id);
+	}
+	
+	@Path("/{messageId}/comments")
+	public CommentResource getCommentResource(){
+		return new CommentResource();
 	}
 }

@@ -1,4 +1,4 @@
-package org.tragent.daneil.messenger;
+package org.tragent.daneil.messenger.resources;
 
 import java.util.List;
 
@@ -12,7 +12,6 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import org.tragent.daneil.messenger.model.Messages;
 import org.tragent.daneil.messenger.model.Profile;
 import org.tragent.daneil.messenger.service.ProfileService;
 

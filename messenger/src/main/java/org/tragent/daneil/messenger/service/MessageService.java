@@ -1,6 +1,7 @@
 package org.tragent.daneil.messenger.service;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -40,5 +41,23 @@ public class MessageService {
 	
 	public Messages removeMessage(long id){
 		return messages.remove(id);
+	}
+	
+	public List<Messages> getAllMessagesForYear(int year){
+		ArrayList<Messages> messagesForYear = new ArrayList<>();
+		Calendar cal = Calendar.getInstance();
+		for(Messages message : messages.values()){
+			cal.setTime(message.getCreated());
+			if(cal.get(Calendar.YEAR) == year){
+				messagesForYear.add(message);
+			}
+		}
+		return messagesForYear;
+	}
+	
+	public List<Messages> getAllMessagesPaginated(int start, int size){
+		ArrayList<Messages> list = new ArrayList<Messages>(messages.values());
+		if(start + size > list.size()) return new ArrayList<Messages>();
+		return list.subList(start, start + size);
 	}
 }
