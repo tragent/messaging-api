@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.tragent.daneil.messenger.database.DatabaseClass;
+import org.tragent.daneil.messenger.exception.DataNotFoundException;
 import org.tragent.daneil.messenger.model.Messages;
 
 public class MessageService {
@@ -22,7 +23,11 @@ public class MessageService {
 	}
 	
 	public Messages getMessage(long id){
-		return messages.get(id);
+		Messages message = messages.get(id);
+		if(message == null){
+			throw new DataNotFoundException("Message with id " + id + " not found");
+		}
+		return message;
 	}
 	
 	public Messages addMessage(Messages message){
