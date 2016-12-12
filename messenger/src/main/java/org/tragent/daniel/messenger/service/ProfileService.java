@@ -1,7 +1,7 @@
-package org.tragent.daneil.messenger.service;
+package org.tragent.daniel.messenger.service;
 
-import org.tragent.daneil.messenger.database.DatabaseClass;
-import org.tragent.daneil.messenger.model.Profile;
+import org.tragent.daniel.messenger.database.DatabaseClass;
+import org.tragent.daniel.messenger.model.Profile;
 
 import java.util.ArrayList;
 import java.util.List;

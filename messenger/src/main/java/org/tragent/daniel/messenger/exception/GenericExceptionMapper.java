@@ -1,8 +1,8 @@
-package org.tragent.daneil.messenger.exception;
+package org.tragent.daniel.messenger.exception;
 
 import javax.ws.rs.ext.Provider;
 
-import org.tragent.daneil.messenger.model.ErrorMessage;
+import org.tragent.daniel.messenger.model.ErrorMessage;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;

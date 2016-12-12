@@ -1,10 +1,10 @@
-package org.tragent.daneil.messenger.database;
+package org.tragent.daniel.messenger.database;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.tragent.daneil.messenger.model.Messages;
-import org.tragent.daneil.messenger.model.Profile;
+import org.tragent.daniel.messenger.model.Messages;
+import org.tragent.daniel.messenger.model.Profile;
 
 public class DatabaseClass {
 

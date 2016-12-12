@@ -1,13 +1,13 @@
-package org.tragent.daneil.messenger.service;
+package org.tragent.daniel.messenger.service;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
-import org.tragent.daneil.messenger.database.DatabaseClass;
-import org.tragent.daneil.messenger.exception.DataNotFoundException;
-import org.tragent.daneil.messenger.model.Messages;
+import org.tragent.daniel.messenger.database.DatabaseClass;
+import org.tragent.daniel.messenger.exception.DataNotFoundException;
+import org.tragent.daniel.messenger.model.Messages;
 
 public class MessageService {
 	

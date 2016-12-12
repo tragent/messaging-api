@@ -1,4 +1,4 @@
-package org.tragent.daneil.messenger;
+package org.tragent.daniel.messenger;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

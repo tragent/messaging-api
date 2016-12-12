@@ -1,4 +1,4 @@
-package org.tragent.daneil.messenger.resources.beans;
+package org.tragent.daniel.messenger.resources.beans;
 
 import javax.ws.rs.QueryParam;
 

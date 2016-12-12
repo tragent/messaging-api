@@ -1,7 +1,7 @@
-package org.tragent.daneil.messenger.resources;
+package org.tragent.daniel.messenger.resources;
 
-import org.tragent.daneil.messenger.service.CommentService;
-import org.tragent.daneil.messenger.model.Comment;
+import org.tragent.daniel.messenger.model.Comment;
+import org.tragent.daniel.messenger.service.CommentService;
 
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;

@@ -1,4 +1,4 @@
-package org.tragent.daneil.messenger.resources;
+package org.tragent.daniel.messenger.resources;
 
 import java.net.URI;
 import java.util.List;
@@ -16,8 +16,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.tragent.daneil.messenger.model.Profile;
-import org.tragent.daneil.messenger.service.ProfileService;
+import org.tragent.daniel.messenger.model.Profile;
+import org.tragent.daniel.messenger.service.ProfileService;
 
 @Path("/profiles")
 @Produces(MediaType.APPLICATION_JSON)

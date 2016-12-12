@@ -1,4 +1,4 @@
-package org.tragent.daneil.messenger.model;
+package org.tragent.daniel.messenger.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

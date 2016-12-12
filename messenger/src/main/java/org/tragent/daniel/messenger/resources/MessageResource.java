@@ -1,4 +1,4 @@
-package org.tragent.daneil.messenger.resources;
+package org.tragent.daniel.messenger.resources;
 
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -8,9 +8,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.tragent.daneil.messenger.service.MessageService;
-import org.tragent.daneil.messenger.model.Messages;
-import org.tragent.daneil.messenger.resources.beans.MessageFilterBean;
+import org.tragent.daniel.messenger.model.Messages;
+import org.tragent.daniel.messenger.resources.beans.MessageFilterBean;
+import org.tragent.daniel.messenger.service.MessageService;
 
 import java.net.URI;
 import java.net.URISyntaxException;

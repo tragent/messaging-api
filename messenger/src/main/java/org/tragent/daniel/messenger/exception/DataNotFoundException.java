@@ -1,4 +1,4 @@
-package org.tragent.daneil.messenger.exception;
+package org.tragent.daniel.messenger.exception;
 
 public class DataNotFoundException extends RuntimeException {
 	
